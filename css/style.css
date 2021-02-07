@@ -112,7 +112,7 @@ main div h4{
 section{
     width: 30%;
     height: 90vh;
-    overflow: hidden;
+    overflow-x: hidden;
     position: fixed;
     top: 50%;
     left: 50%;
@@ -120,10 +120,11 @@ section{
     border-radius: 25px;
     background-color: rgba(255, 255, 255, 1);
     display: none;
+    padding-bottom: 25px;
 }
 
 section > i{
-    position: absolute;
+    position: fixed;
     right: 25px;
     top: 30px;
     color: tomato;
