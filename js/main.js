@@ -49,6 +49,11 @@ function getFoodDetail(foodDetails) {
         <p><i class="fa fa-check-square" aria-hidden="true"></i>  ${foodDetails.meals[0]['strIngredient3']}</p>
         <p><i class="fa fa-check-square" aria-hidden="true"></i>  ${foodDetails.meals[0]['strIngredient4']}</p>
         <p><i class="fa fa-check-square" aria-hidden="true"></i>  ${foodDetails.meals[0]['strIngredient5']}</p>
+        <p><i class="fa fa-check-square" aria-hidden="true"></i>  ${foodDetails.meals[0]['strIngredient6']}</p>
+        <p><i class="fa fa-check-square" aria-hidden="true"></i>  ${foodDetails.meals[0]['strIngredient7']}</p>
+        <p><i class="fa fa-check-square" aria-hidden="true"></i>  ${foodDetails.meals[0]['strIngredient8']}</p>
+        <p><i class="fa fa-check-square" aria-hidden="true"></i>  ${foodDetails.meals[0]['strIngredient9']}</p>
+        <p><i class="fa fa-check-square" aria-hidden="true"></i>  ${foodDetails.meals[0]['strIngredient10']}</p>
         `;
     document.querySelector('section').innerHTML = getFoodDetailInfo;
     document.querySelector('section').style.display = 'block';
