@@ -157,3 +157,35 @@ section p{
 section p i{
     color: #3B2D64;
 }
+
+@media only screen and (max-width: 992px){
+    div#search-bar{
+        width: 50%;
+    }
+
+    main{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    section{
+        width: 80%;
+        height: 100%;
+        overflow-y: auto;
+    }
+}
+
+@media only screen and (max-width: 550px){
+    section{
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+    }
+
+    div#search-bar{
+        width: 70%;
+    }
+
+    main{
+        grid-template-columns: 1fr;
+    }
+}
