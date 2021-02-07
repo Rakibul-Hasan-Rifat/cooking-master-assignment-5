@@ -124,7 +124,7 @@ section{
 }
 
 section > i{
-    position: fixed;
+    position: absolute;
     right: 25px;
     top: 30px;
     color: tomato;
