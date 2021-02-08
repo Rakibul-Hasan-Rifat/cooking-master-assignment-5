@@ -85,7 +85,7 @@ div#search-bar #search-btn:hover{
 main {
     width: 75%;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     grid-gap: 25px;
     margin: 10px auto 45px;
 }

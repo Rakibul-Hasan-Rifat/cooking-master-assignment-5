@@ -10,16 +10,14 @@ document.getElementById('search-btn').addEventListener('click', () => {
 // This function is for showing the list of items searched by anyone
 function getFoodResults(foodsInfo) {
     if (foodsInfo.meals) {
-        document.querySelector('main').innerHTML = '';
-        foodsInfo.meals.forEach(meal => {
-            let div = `
+        let allFoodsBasicInfo = foodsInfo.meals.map(meal => {
+            return `
                 <div>
                     <img src='${meal.strMealThumb}'>
                     <h4>${meal.strMeal}</h4>
-                </div>
-            `;
-            document.querySelector('main').innerHTML += div;
-        })
+                </div>`;
+        });
+        document.querySelector('main').innerHTML = allFoodsBasicInfo.join('');
     }
     else {
         swal({
@@ -60,7 +58,7 @@ function getFoodDetail(foodDetails) {
     document.querySelector('section').style.display = 'block';
 
     // This event for hiding the detail section by clicking on 'x' 
-    document.querySelector('section i').addEventListener('click', hidingDetailSection, true);
+    document.querySelector('section i').addEventListener('click', hidingDetailSection);
 }
 
 // This event for hiding the detail section by clicking out of the item 
