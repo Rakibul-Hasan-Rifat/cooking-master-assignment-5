@@ -10,6 +10,7 @@ document.getElementById('search-btn').addEventListener('click', () => {
 // This function is for showing the list of items searched by anyone
 function getFoodResults(foodsInfo) {
     if (foodsInfo.meals) {
+        document.querySelector('main').innerHTML = '';
         foodsInfo.meals.forEach(meal => {
             let div = `
                 <div>
